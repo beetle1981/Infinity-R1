@@ -21,7 +21,7 @@ InfinityR1 8G/512M
   - 3x ES7243 ADC IIS/ADC
 - Audio Output : DAC stereo|Mono ADC AK7755 to AMP TI TPA3118 class D
 #HDMI, AV, and coaxial S/PDIF
-- Connectivity : wifi and bluetooth,AW-CM256SM/802.11ac
+- Connectivity : wifi and bluetooth,CYPRESS CYW43455/802.11n/ac,BT4.2
 #100Mbps Ethernet, 802.11 b/g/n WiFi
 - USB : 1x USB 2.0 host ports|OTG
 - Interfaces : 1x USB
