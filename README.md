@@ -15,7 +15,7 @@ InfinityR1 8G/512M
 - GPU : ARM Mali-400MP
 - Memory : 512M DDR3
 - Storage : 8GB samsung emmc flash,KLM8G1GEME-B041 8GB 16nm，EMMC5.1
-- Video Output : HDMI 2.0 up to 4K2K @60 fps, and 3.5mm AV output (composite)
+#- Video Output : HDMI 2.0 up to 4K2K @60 fps, and 3.5mm AV output (composite)
 - Audio Input ： 
   - 4x MIC
   - 3x ES7243 ADC IIS/ADC
