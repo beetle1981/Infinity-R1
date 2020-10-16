@@ -63,7 +63,7 @@ Baudraute : 1.5M(1500000)
 Data bits : 8M
 Stop bits : 1
 ```
-Important:  need connect r211 with the GND and plugin the power supply to soundbox.
+Important:  need connect r211 with the GND before plugin the power supply to soundbox.
 
 # How-to Build U-Boot
 
