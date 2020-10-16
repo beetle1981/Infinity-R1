@@ -1,4 +1,4 @@
-# MX4N
+# Infinity R1
 
 A brave effort to make a flashable linux image for the InfinityR1 (8G1/512M) AI Soundbox
 
@@ -29,7 +29,7 @@ InfinityR1 8G/512M
 - Power Supply : 5V/2A
 
 ## TODO
-- [x] get UART output through SDcard slot
+- [x] get UART output through USB OTG
 - [ ] Build own U-Boot / Kernel / rootfs
 - [ ] Video Output while booting
 - [ ] Enable UART routing to USB port(?)
@@ -38,37 +38,32 @@ InfinityR1 8G/512M
 # How-to UART
 
 ###### What you need
-- USB A Male to Male adapter
-- Empty microSD adatper
-- 3x Breadboard wires
+- Patch a micro usb connector or wired directly.
+- an USB-TTL adaptor such as CH340.
 
 
 ###### Wiring
-SDslot pinout seen from back of slot
-```
- 9   1   2   3   4   5   6   7   8
-[ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ]
+the Check point on board and connect way as below.
 ```
 
-USB-TTL and SDslot wiring
+```
+
+USB-TTL to UART wiring
 
 ```
-USB-TTL     SDslot
-  RXD   ->    7
-  TXD   ->    2
+USB-TTL     UART
+  OTG/ID -> TP12(not connected)
+  RXD   ->   TP13/DP 
+  TXD   ->   TP14/DM
   GND   ->   GND
 ```
-Insert the microSD adapter halfway and get the breaboard wires into the back of SDslot [See picture](docs/PICTURES.md) and connect
-them to the USB-TTL adapter
-
 Connect USB-TTL and open terminal emulator of choice
 ```
-Baudraute : 1.5M (1500000)
-Data bits : 8
+Baudraute : 1.5M(1500000)
+Data bits : 8M
 Stop bits : 1
 ```
-Insert USB A Male to Male adapter into the OTG usb port (USB-4) and you should see lots of [text](/uart_output.txt) scrolling in your terminal window (rejoice!) :thumbsup:
-
+Important:  need connect r211 with the GND and plugin the power supply to soundbox.
 
 # How-to Build U-Boot
 
