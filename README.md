@@ -52,7 +52,9 @@ SDslot pinout seen from back of slot
 
 USB-TTL and SDslot wiring
 
-```
+=>will patch a micro usb female connector.
+=>an USB to TTL adaptor is needed.
+
 USB-TTL     SDslot
   RXD   ->    7
   TXD   ->    2
