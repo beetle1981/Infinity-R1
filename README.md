@@ -18,7 +18,7 @@ InfinityR1 8G/512M
 #- Video Output : HDMI 2.0 up to 4K2K @60 fps, and 3.5mm AV output (composite)
 - Audio Input ： 
   - 4x MIC
-  - 3x ES7243 ADC IIS/ADC
+  - 3x ES7243 ADC I2S/ADC
 - Audio Output : DAC stereo|Mono ADC AK7755 to AMP TI TPA3118 class D
 #HDMI, AV, and coaxial S/PDIF
 - Connectivity : wifi and bluetooth,CYPRESS CYW43455/802.11n/ac,BT4.2
@@ -38,7 +38,7 @@ InfinityR1 8G/512M
 # How-to UART
 
 ###### What you need
-- Patch a micro usb connector or wired directly.
+- Setup a micro usb connector or wired directly.
 - an USB-TTL adaptor such as CH340.
 
 
